@@ -30,7 +30,7 @@ app.use(ConfirmationService)
 app.use(DialogService)
 
 async function prepareApp() {
-  if (import.meta.env.DEV) {
+  if (import.meta.env.DEV || import.meta.env.VITE_ENABLE_MSW === 'true') {
     const { worker } = await import('./mocks/browser')
     await worker.start({ onUnhandledRequest: 'bypass' })
   }
