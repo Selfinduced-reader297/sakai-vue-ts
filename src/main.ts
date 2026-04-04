@@ -29,4 +29,12 @@ app.use(ToastService)
 app.use(ConfirmationService)
 app.use(DialogService)
 
-app.mount('#app')
+async function prepareApp() {
+  if (import.meta.env.DEV) {
+    const { worker } = await import('./mocks/browser')
+    await worker.start({ onUnhandledRequest: 'bypass' })
+  }
+  app.mount('#app')
+}
+
+prepareApp()
