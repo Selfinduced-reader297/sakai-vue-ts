@@ -1,13 +1,17 @@
 import { createApp } from 'vue'
-import { createPinia } from 'pinia'
-import PrimeVue from 'primevue/config'
-import Aura from '@primeuix/themes/aura'
-import ToastService from 'primevue/toastservice'
-import DialogService from 'primevue/dialogservice'
-import 'primeicons/primeicons.css'
-
 import App from './App.vue'
 import router from './router'
+
+import Aura from '@primeuix/themes/aura'
+import PrimeVue from 'primevue/config'
+import ConfirmationService from 'primevue/confirmationservice'
+import DialogService from 'primevue/dialogservice'
+import ToastService from 'primevue/toastservice'
+
+import { createPinia } from 'pinia'
+
+import '@/assets/tailwind.css'
+import '@/assets/styles.scss'
 
 const app = createApp(App)
 
@@ -22,6 +26,7 @@ app.use(PrimeVue, {
   },
 })
 app.use(ToastService)
+app.use(ConfirmationService)
 app.use(DialogService)
 
 app.mount('#app')
