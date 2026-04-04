@@ -1,22 +1,21 @@
-name: Release
+name: CI
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - main
 
 permissions:
-  contents: write
-  issues: write
-  pull-requests: write
+  contents: read
 
 jobs:
-  release:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
 
       - uses: pnpm/action-setup@v5
 
@@ -27,6 +26,11 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
 
-      - run: pnpm release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Type check
+        run: pnpm type-check
+
+      - name: Lint
+        run: pnpm lint:eslint && pnpm lint:oxlint
+
+      - name: Build
+        run: pnpm build-only
